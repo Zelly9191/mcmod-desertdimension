@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "desertdimension",
+  "version": "${version}",
+  "name": "Desert Dimension",
+  "description": "Add desert single biome world type as separate dimension.",
+  "authors": [
+    "mahmudindev"
+  ],
+  "contact": {
+    "homepage": "https://github.com/mahmudindev",
+    "sources": "https://github.com/mahmudindev/mcmod-desertdimension"
+  },
+  "license": "ARR",
+  "icon": "assets/desertdimension/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.mahmudindev.mcmod.desertdimension.fabric.DesertDimensionFabric"
+    ],
+    "client": [
+      "com.github.mahmudindev.mcmod.desertdimension.fabric.client.DesertDimensionFabricClient"
+    ]
+  },
+  "mixins": [
+    "desertdimension.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "dimensionfixer": ">=0.0.9",
+    "worldportal": ">=0.0.9"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}
